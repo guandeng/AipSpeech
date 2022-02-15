@@ -1,0 +1,19 @@
+{
+    "name": "guandeng/aipspeech",
+    "description": "百度语音合成api",
+    "license": "MIT",
+    "authors": [
+        {
+        "name": "guandeng",
+        "email": "guandeng@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Guandeng\\Aipspeech\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1"
+    }
+}
