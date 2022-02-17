@@ -259,7 +259,8 @@ class AipBase
      */
     private function getAuthFilePath()
     {
-        return dirname(__FILE__) . DIRECTORY_SEPARATOR . md5($this->apiKey);
+        return storage_path('app/public') . DIRECTORY_SEPARATOR . md5($this->apiKey);
+        // return dirname(__FILE__) . DIRECTORY_SEPARATOR . md5($this->apiKey);
     }
 
     /**

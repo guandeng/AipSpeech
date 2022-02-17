@@ -6,8 +6,23 @@
 composer require "guandeng/aipspeech"
 ```
 publish config
+
+1、在 config/app.php 注册 ServiceProvider 和 Facade (Laravel 5.5 + 无需手动注册)
+```
+'providers' => [
+    // ...
+    Overtrue\LaravelWeChat\ServiceProvider::class,
+],
+```
+2、创建配置文件
 ```
 php artisan vendor:publish --provider="Guandeng\Aipspeech\AipSpeechProvider"
+```
+
+##### Lumen 应用
+1、在 bootstrap/app.php
+```
+$app->register(Guandeng\Aipspeech\AipSpeechProvider::class);
 ```
 
 #### Usage
