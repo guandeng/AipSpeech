@@ -15,5 +15,12 @@
     },
     "require": {
         "php": ">=7.1"
+    }, 
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Guandeng\\Aipspeech\\AipSpeechProvider"
+            ]
+        }
     }
 }
